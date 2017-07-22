@@ -6,31 +6,32 @@
   <title>instagram</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <div class="login">
-      <div class="login__thumb">
-        <img src="images/phoneImage.png" class="login__thumb--phone-image" />
-      </div>
-      <div class="login__thumb">
+  <main class="login">
+    <div class="login__column">
+      <img src="images/phoneImage.png" class="login__thumb--phone-image" />
+    </div>
+    <div class="login__column login__loging">
+      <div class="login__box">
         <img src="images/logoLogin.png" class="login__logo" />
+        <form action="feed.html" method="get">
+          <input type="email" name="user" placeholder="Username" required />
+          <input type="password" name="pass" placeholder="Password" required />
+          <input type="submit" value="Log in" />
+        </form>
+        <span class="login__divider">OR</span>
+        <a href="#" class="login__fb--link">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          Log in with Facebook
+        </a>
+        <a href="#" class="login__link login__link--ask">Forgot password?</a>
       </div>
-      <form action="feed.html" method="get">
-        <input type="email" name="user" placeholder="Username" required />
-        <input type="password" name="pass" placeholder="Password" required />
-        <input type="submit" value="Log in" />
-      </form>
-      <span class="login__divider">OR</span>
-      <a href="#" class="login__fb--link">
-        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-        Log in with Facebook
-      </a>
-      <a href="#" class="login__link login__link--ask">Forgot password?</a>
       <div class="login__box">
         <span class="login__text">Don't have an account?</span>
-        <a href="#">Sign up</a>
+        <a href="#" class="login__link login__Link--blue">Sign up</a>
       </div>
       <div class="login__box login__box--transparent">
         <span class="login__text">Get the app.</span>
@@ -41,7 +42,7 @@
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="footer">
     <nav class="footer__nav">
       <ul class="footer__list">
         <li class="footer__list--item"><a href="#" class="footer__link">ABOUT US</a></li>
