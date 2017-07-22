@@ -1,0 +1,18 @@
+body {
+  background-color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #b2b2b2;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+  opacity: 0.7;
+}
