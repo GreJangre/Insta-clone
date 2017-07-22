@@ -7,15 +7,7 @@
   border: 1px solid #e6e6e6;
 }
 
-.feed .feed__photo img {
-  width: 35px;
-  height: 35px;
-  margin-right: 15px;
-  border: 1px solid #e6e6e6;
-  border-radius: 50%;
-}
-
-.feed .feed__header {
+.photo__header {
   background-color: white;
   padding: 15px;
   border-radius: 5px;
@@ -23,48 +15,56 @@
   align-items: center;
 }
 
-.feed .feed__user {
+.photo__thumb img {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+.photo__user {
   display: flex;
   flex-direction: column;
 }
 
-.feed .feed__user a {
+.photo__user a {
   font-weight: 600;
   font-size: 15px;
 }
 
-.feed .feed__user .user__location {
+.photo__user .user__location {
   font-size: 13px;
 }
 
-.photo__image .photo__main img {
+.photo__main img {
   max-width: 100%;
 }
 
-.feed .feed__comments {
-  border-bottom: 1px solid #e6e6e6;
+.photo__comments {
   margin: 0px 15px 5px 15px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
-.feed__comments span {
+.comments__content span {
   font-weight: 600;
   font-size: 14px;
 }
 
-.feed__comments .photo__date {
+.comments__content .photo__date {
   color: gray;
   font-weight: 300;
   font-size: 8px;
 }
 
-.feed__comments--icon {
+.photo__comments--icon {
   font-size: 23px;
   margin-top: 10px;
   margin-bottom: 8px;
 }
 
-.feed__comments--icon i {
+.photo__comments--icon i {
   margin-right: 10px;
 }
 
@@ -72,27 +72,30 @@
   margin-top: 10px;
 }
 
-.feed__comment--input {
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
+.photo__comments li:last-child {
+  margin-bottom: 10px;
 }
 
-.feed__comment--input textarea {
+.photo__comment--input {
+  display: flex;
+  align-items: center;
+}
+
+.photo__comment--input textarea {
   border: 0;
   resize: none;
-  width: 95%;
+  width: 93%;
   margin: 0 auto;
   background-color: rgb(250, 250, 250);
   padding: 10px 10px 0 15px;
   font-size: 15px;
 }
 
-.feed__comment--input textarea {
+.photo__comment--input textarea:focus {
   outline: none;
 }
 
-.feed__comment--input i {
+.photo__comment--input i {
   cursor: pointer;
   margin-right: 20px;
 }
