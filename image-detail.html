@@ -2,9 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>image-detail | instaclone</title>
+  <meta charset="utf-8" />
+  <title>feed||Instagram</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="shortcut icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="css/style.css">
@@ -12,56 +11,52 @@
 
 <body>
   <nav class="navigation">
-    <a href="feed.html">
-      <img src="images/logo.png" class="navigation__logo" />
-    </a>
+    <a href="feed.html"><img src="images/logo.png" class="navigation__logo" /></a>
     <input type="text" placeholder="Search" class="navigation__input">
     <div class="navigation__icons">
-      <a href="explore.html" class="navigation__link">
-        <i class="fa fa-compass"></i>
-      </a>
-      <a href="#" class="navigation__link">
-        <i class="fa fa-heart-o"></i>
-      </a>
-      <a href="profile.html" class="navigation__link">
-        <i class="fa fa-user-o"></i>
-      </a>
+      <a href="explore.html" class="navigation__link"><i class="fa fa-compass"></i></a>
+      <a href="#" class="navigation__link"><i class="fa fa-heart-o"></i></a>
+      <a href="profile.html" class="navigation__link"><i class="fa fa-user-o"></i></a>
     </div>
   </nav>
-  <main class="image--deatil">
-    <div class="photo photo--detail">
-      <img src="images/feedPhoto.jpg">
-    </div>
-    <div class="photo__image">
+  <main class="photo--detail">
+    <img src="images/feedPhoto.jpg" class="photo__main" />
+    <div class="photo__content">
       <header class="photo__header">
-        <img src="images/avatar.jpg" class="photo__thumb">
-        <span class="photo__username">
-        <a href="profile.html">GregreJangre</a>
-      </span>
-        <span class="location">Jeju, Republic of korea</span>
-      </header>
-      <div class="feed__comment">
-        <ul class="photo__comments">
-          <li class="photo__comment">
-            <span class="comment--author">blacktattoo</span> alfhakjanfkjb
-          </li>
-          <li class="photo__comment">
-            <span class="comment--author">whitetattoo</span> afkbalfbwakbf
-          </li>
-          <li class="photo__comment">
-            <span class="comment--author">bluetattoo</span> alfnmn, wefukd
-          </li>
-        </ul>
-        <div class="feed__comment--icon">
-          <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+        <div class="photo__thumb">
+          <img src="images/avatar.jpg">
         </div>
-        <span class="likes">5,393 likes</span>
-        <span class="photo_date">12 HOURS AGO</span>
-      </div>
-      <div class="feed__comment--input">
-        <textarea placeholder="Add a comment"></textarea>
-        <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+        <div class="photo__user">
+          <a href="profile.html">GregreJangre</a>
+          <span class="user__location">Jinju</span>
+        </div>
+      </header>
+      <div class="photo__image">
+        <div class="photo__comments">
+          <div class="photo__comments--icon">
+            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+          </div>
+          <div class="comments__content">
+            <span class="photo__likes">5,393 likes</span>
+            <ul class="photo__comments--list">
+              <li class="photo__comment">
+                <span class="photo__comment--author">blacktattoo</span> alfhakjanfkjb
+              </li>
+              <li class="photo__comment">
+                <span class="photo__comment--author">whitetattoo</span> afkbalfbwakbf
+              </li>
+              <li class="photo__comment">
+                <span class="photo__comment--author">bluetattoo</span> alfnmn, wefukd
+              </li>
+            </ul>
+            <span class="photo__date">12 HOURS AGO</span>
+          </div>
+        </div>
+        <div class="photo__comment--input">
+          <textarea placeholder="Add a comment..."></textarea>
+          <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
   </main>

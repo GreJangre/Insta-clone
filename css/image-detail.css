@@ -1,0 +1,16 @@
+.photo--detail {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.photo--detail .photo__main {
+  height: 40%;
+  width: 60%;
+}
+
+.photo--detail .photo__content {
+  width: 40%;
+}
