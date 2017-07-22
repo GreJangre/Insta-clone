@@ -20,40 +20,45 @@
     </div>
   </nav>
   <main class="feed">
-    <div class="feed-header__photo">
-      <img src="images/avatar.jpg">
-      <span class="feed-header__username">
+    <header class="feed__header">
+      <div class="feed__photo">
+        <img src="images/avatar.jpg">
+      </div>
+      <div class="feed__user">
         <a href="profile.html">GregreJangre</a>
-      </span>
-      </header>
-      <div class="photo__image">
-        <header class="photo__header">
-          <img src="images/feedPhoto.jpg" />
-        </header>
-        <div class="feed__comment">
-          <div class="feed__comment-icon">
-            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-          </div>
+        <span class="user__location">Jinju</span>
+      </div>
+    </header>
+    <div class="photo__image">
+      <div class="photo__main">
+        <img src="images/feedPhoto.jpg" />
+      </div>
+      <div class="feed__comments">
+        <div class="feed__comments--icon">
+          <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+        </div>
+        <div class="comments__content">
           <span class="photo__likes">5,393 likes</span>
           <ul class="photo__comments">
             <li class="photo__comment">
-              <span class="photo__comment-author">blacktattoo</span> alfhakjanfkjb
+              <span class="photo__comment--author">blacktattoo</span> alfhakjanfkjb
             </li>
             <li class="photo__comment">
-              <span class="photo__comment-author">whitetattoo</span> afkbalfbwakbf
+              <span class="photo__comment--author">whitetattoo</span> afkbalfbwakbf
             </li>
             <li class="photo__comment">
-              <span class="photo__comment-author">bluetattoo</span> alfnmn, wefukd
+              <span class="photo__comment--author">bluetattoo</span> alfnmn, wefukd
             </li>
           </ul>
-          <span class="photo_date">12 HOURS AGO</span>
-        </div>
-        <div class="feed__comment-input">
-          <textarea placeholder="Add a comment"></textarea>
-          <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+          <span class="photo__date">12 HOURS AGO</span>
         </div>
       </div>
+      <div class="feed__comment--input">
+        <textarea placeholder="Add a comment..."></textarea>
+        <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <nav class="footer__nav">

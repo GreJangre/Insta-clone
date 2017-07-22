@@ -1,0 +1,88 @@
+.feed {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+}
+
+.feed .feed__photo img {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+.feed .feed__header {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.feed .feed__user {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed .feed__user a {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.feed .feed__user .user__location {
+  font-size: 13px;
+}
+
+.photo__image .photo__main img {
+  max-width: 100%;
+}
+
+.feed .feed__comments {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.feed__comments span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.feed__comments .photo__date {
+  color: gray;
+  font-weight: 300;
+  font-size: 8px;
+}
+
+.feed__comments--icon {
+  font-size: 23px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.feed__comments--icon i {
+  margin-right: 10px;
+}
+
+.photo__comments li {
+  margin-top: 10px;
+}
+
+.feed__comment--input {
+  display: flex;
+  align-items: center;
+}
+
+.feed__comment--input textarea {
+  width: 550px;
+  margin: 0 auto;
+  background-color: rgb(250, 250, 250);
+  padding: 10px 10px 0 15px;
+  border: none;
+  border-top: 1px solid #e6e6e6;
+  outline: none;
+  font-size: 15px;
+}
