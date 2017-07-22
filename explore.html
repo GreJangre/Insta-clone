@@ -6,10 +6,11 @@
   <title>explore | Instaclone</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <nav>
+  <nav class="navigation">
     <a href="feed.html">
       <img src="images/logo.png" class="navigation__logo" />
     </a>
@@ -30,41 +31,43 @@
     <ul class="users__list">
       <li class="users__user">
         <div class="explore__user">
-          <img src="images/avatar.jpg" />
+          <a href="profile.html">
+            <img src="images/avatar.jpg" />
+          </a>
+          <div class="user__name">
+            <span class="user__username">GregreJangre</span>
+            <span class="user__fullname">Greik</span>
+          </div>
         </div>
-        <div class="user__name">
-          <span class="user__username">GregreJangre</span>
-          <span class="user__fullname">Greik</span>
-        </div>
-        <a href="#"><button>Follow</button></a>
+        <a href="#"><button class="user__button">Follow</button></a>
       </li>
       <li class="users__user">
         <div class="explore__user">
-          <img src="images/avatar.jpg" />
+          <a href="profile.html">
+            <img src="images/avatar.jpg" />
+          </a>
+          <div class="user__name">
+            <span class="user__username">GregreJangre</span>
+            <span class="user__fullname">Greik</span>
+          </div>
         </div>
-        <div class="user__name">
-          <span class="user__username">GregreJangre</span>
-          <span class="user__fullname">Greik</span>
-        </div>
-        <form action="#" method="get" class="user__follow">
-          <input type="button" value="Follow" />
-        </form>
+        <a href="#"><button class="user__button">Follow</button></a>
       </li>
       <li class="users__user">
         <div class="explore__user">
-          <img src="images/avatar.jpg" />
+          <a href="profile.html">
+            <img src="images/avatar.jpg" />
+          </a>
+          <div class="user__name">
+            <span class="user__username">GregreJangre</span>
+            <span class="user__fullname">Greik</span>
+          </div>
         </div>
-        <div class="user__name">
-          <span class="user__username">GregreJangre</span>
-          <span class="user__fullname">Greik</span>
-        </div>
-        <form action="#" method="get" class="user__follow">
-          <input type="button" value="Follow" />
-        </form>
+        <a href="#"><button class="user__button">Follow</button></a>
       </li>
     </ul>
   </main>
-  <footer>
+  <footer class="footer">
     <nav class="footer__nav">
       <ul class="footer__list">
         <li class="footer__list--item"><a href="#" class="footer__link">ABOUT US</a></li>
