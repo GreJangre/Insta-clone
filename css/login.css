@@ -7,7 +7,7 @@
   margin-top: 40px;
 }
 
-.login .login__column:first-child {
+.login .login__column--left {
   width: 50%
 }
 
@@ -62,6 +62,16 @@
   padding-top: 5px;
   padding-bottom: 5px;
   background: #3897f0;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.login .login__box form input[type="submit"]:hover {
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #187ede;
   color: white;
   border: 0;
   cursor: pointer;

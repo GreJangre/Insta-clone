@@ -1,19 +1,26 @@
 .profile {
   width: 100%;
   max-width: 950px;
-min-width: 605px;
+  min-width: 605px;
   margin: 0 auto;
   margin-top: 60px;
 }
+
 .profile .profile__header {
-    display: flex;
+  display: flex;
 }
+
 .profile .profile__thumb {
-    width: 125px;
-    height: 125px;
-    border: 1px solid #e6e6e6;
-    border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
 }
+
 .profile .profile__name {
-    display: flex;
+  display: flex;
+}
+
+.profile .profile__stats {
+  display: flex;
 }

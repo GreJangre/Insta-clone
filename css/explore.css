@@ -59,4 +59,17 @@
   font-weight: 600;
   font-size: 14px;
   float: right;
+  cursor: pointer;
+  transition: all .15s linear;
+}
+
+.explore .user__button:hover {
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 7.5px;
+  background-color: #187ede;
+  font-weight: 600;
+  font-size: 14px;
+  float: right;
 }

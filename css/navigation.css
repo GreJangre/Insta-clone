@@ -23,3 +23,19 @@
   background-color: #fafafa;
   transition: all .15s linear;
 }
+
+i.fa-compass {
+  height: 25.3px;
+  width: 24px;
+  text-align: center;
+  animation: 1.5s icon ease-in-out;
+}
+
+@keyframes icon {
+  from {
+    transform: rotate(1turn);
+  }
+  to {
+    transform: translate(1turn);
+  }
+}
