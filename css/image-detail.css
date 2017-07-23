@@ -4,11 +4,15 @@
   max-width: 950px;
   margin: 0 auto;
   margin-top: 60px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
 }
 
 .photo--detail .photo__main {
   height: 40%;
   width: 60%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .photo--detail .photo__content {
