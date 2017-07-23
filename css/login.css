@@ -50,6 +50,11 @@
   border: 1px solid #efefef;
   border-radius: 3px;
   font-size: 14px;
+  transition: all .15s linear;
+}
+
+.login .login__box form input:focus {
+  border: 1px solid rgb(178, 178, 178);
 }
 
 .login .login__box form input[type="submit"] {
@@ -59,13 +64,37 @@
   background: #3897f0;
   color: white;
   border: 0;
+  cursor: pointer;
 }
 
 .login .login__box .login__divider {
+  font-size: 13px;
   text-transform: uppercase;
   display: block;
   margin-top: 20px;
   margin-bottom: 15px;
+  color: #999;
+  position: relative;
+}
+
+.login__divider:before {
+  content: '';
+  width: 43%;
+  height: 1px;
+  background-color: #999;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+.login__divider:after {
+  content: '';
+  width: 43%;
+  height: 1px;
+  background-color: #999;
+  position: absolute;
+  top: 7px;
+  right: 0;
 }
 
 .login .login__box .login__fb--link {

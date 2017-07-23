@@ -21,6 +21,10 @@
   .navigation {
     padding: 0 20px;
   }
+  .navigation__logo {
+    width: 160px;
+    height: 31px;
+  }
   .navigation__input {
     display: none;
   }
@@ -55,8 +59,10 @@
   .explore .user__list {
     background-color: transparent;
   }
-  .explore .users__list .users__user:last-child {
+  .explore .users__list .users__user {
     border: none;
+  }
+  .explore .users__list .users__user:last-child {
     padding-bottom: 40px;
   }
   .explore__footer {

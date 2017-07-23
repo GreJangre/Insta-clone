@@ -21,4 +21,5 @@
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   background-color: #fafafa;
+  transition: all .15s linear;
 }
