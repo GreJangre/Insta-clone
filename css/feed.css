@@ -47,6 +47,12 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+.comments__content .num {
+  font-size: 14px;
+  width: 30px;
+  border: none;
+}
+
 .comments__content span {
   font-weight: 600;
   font-size: 14px;
@@ -104,20 +110,17 @@
   margin-right: 20px;
 }
 
-.heart-pumping {
+.heart-red {
   color: red;
-  animation: 1s pumping infinite ease-in-out;
+  animation: 0.3s red ease-in-out;
 }
 
-@keyframes pumping {
-  0% {
-    transform: scale(0.8);
+@keyframes red {
+  from {
+    transform: scale(0.9);
   }
-  50% {
+  to {
     transform: scale(1.0);
-  }
-  100% {
-    transform: scale(0.8);
   }
 }
 

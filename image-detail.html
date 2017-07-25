@@ -35,11 +35,13 @@
       <div class="photo__image">
         <div class="photo__comments">
           <div class="photo__comments--icon">
-            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+            <i class="fa fa-heart-o heart--move" aria-hidden="true"></i>
+            <i class="fa fa-comment-o" aria-hidden="true"></i>
           </div>
           <div class="comments__content">
-            <span class="photo__likes">5,393 likes</span>
+            <span class="photo__likes">
+              <input type="text" value="300" class="num" />likes
+            </span>
             <ul class="photo__comments--list">
               <li class="photo__comment">
                 <span class="photo__comment--author">blacktattoo</span> alfhakjanfkjb
@@ -56,7 +58,7 @@
         </div>
         <div class="photo__comment--input">
           <textarea placeholder="Add a comment..."></textarea>
-          <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
         </div>
       </div>
     </div>
@@ -78,6 +80,14 @@
     </nav>
     <span class="footer__copy">© 2017 INSTAGRAM</span>
   </footer>
+  <div class="overlay">
+    <i class="fa fa-times fa-2x"></i>
+    <div class="overlay__menu">
+      <a href="#" class="overlay__link">Report inappropriate</a>
+      <a href="#" class="overlay__link">Embed</a>
+      <a href="#" class="overlay__link overlay__link--cancel">Cancel</a>
+    </div>
+  </div>
   <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
 </body>

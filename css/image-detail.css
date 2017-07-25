@@ -18,3 +18,46 @@
 .photo--detail .photo__content {
   width: 40%;
 }
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.overlay i {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.overlay .overlay__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.overlay .overlay__menu .overlay__link {
+  background-color: white;
+  width: 35%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
+}
+
+.overlay .overlay__menu .overlay__link:hover {
+  background-color: #e2e2e2;
+}
+
+.overlay .overlay__menu .overlay__link:last-child {
+  border-bottom: none;
+}
