@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media screen and (min-width: 450px) and (max-width: 735px) {
   .body__index {
     background-color: white;
   }
@@ -71,5 +71,15 @@
   }
   .photo--detail .photo__main {
     border-radius: 0;
+  }
+  .edit-profile {
+    margin-top: 0;
+    border: none;
+  }
+  .edit-profile__menu {
+    display: none;
+  }
+  .footer__edit {
+    margin-top: 10px;
   }
 }

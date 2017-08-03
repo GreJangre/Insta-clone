@@ -13,77 +13,125 @@
 <body>
   <nav class="navigation">
     <a href="feed.html">
-      <img src="images/logo.png" class="navigation__logo" />
-    </a>
+            <img src="images/logo.png" class="navigation__logo" />
+        </a>
     <input type="text" placeholder="Search" class="navigation__input">
     <div class="navigation__icons">
       <a href="explore.html" class="navigation__link">
-        <i class="fa fa-compass"></i>
-      </a>
+                <i class="fa fa-compass"></i>
+            </a>
       <a href="#" class="navigation__link">
-        <i class="fa fa-heart-o"></i>
-      </a>
+                <i class="fa fa-heart-o"></i>
+            </a>
       <a href="profile.html" class="navigation__link">
-        <i class="fa fa-user-o"></i>
-      </a>
+                <i class="fa fa-user-o"></i>
+            </a>
     </div>
   </nav>
   <main class="edit-profile">
-    <div class="edit-profile__header">
-      <img src="images/avatar.jpg" class="edit-profile__thumb" />
-      <h3 class="deit-profile__username">GregreJangre</h3>
+    <div class="edit-profile__menu">
+      <ul class="edit-profile__lists">
+        <li>
+          <a class="edit-profile__list" href="#">Edit Profile</a>
+        </li>
+        <li>
+          <a class="edit-profile__list" href="#">Change Password</a>
+        </li>
+        <li>
+          <a class="edit-profile__list" href="#">Authirized Applications</a>
+        </li>
+        <li>
+          <a class="edit-profile__list" href="#">Comments</a>
+        </li>
+        <li>
+          <a class="edit-profile__list" href="#">Eamil and SMS</a>
+        </li>
+      </ul>
     </div>
-    <div class="edit-profile__list">
-      <form action="#" method="get">
-        <ul class="edit-profile__clist--item">
-          <li class="edit-profile__list--item">
-            <label for="name" class="edit__content--name">Name</label>
-            <input id="name" type="text" required/>
-          </li>
-          <li class="edit-profile__list--item">
-            <label for="username" class="edit__content--name">Username</label>
-            <input id="username" type="text" />
-          </li>
-          <li class="edit-profile__list--item">
-            <label for="website" class="edit__content--name">Website</label>
-            <input id="website" type="text" />
-          </li>
-          <li class="edit-profile__list--item">
-            <label for="bio" class="edit__content--name">Bio</label>
-            <textarea id="bio"></textarea>
-          </li>
-          <span class="private__content">
-            PRIVATE INFORMATION
-          </span>
-          <li class="edit-profile__list--item">
-            <label for="email" class="edit__content-name">Email</label>
-            <input id="email" type="email" required/>
-          </li>
-          <li class="edit-profile__list--item">
-            <label for="phone-number" class="edit__content-name">Phone Number</label>
-            <input id="phone-number" type="tel" required/>
-          </li>
-          <li class="edit-profile__list--item">
-            <span class="edit__content-name">Gender</span>
+    <div class="edit-profile__right">
+      <div class="edit-profile__header">
+        <img src="images/avatar.jpg" class="edit-profile__thumb" />
+        <h1 class="edit-profile__username">GregreJangre</h1>
+      </div>
+      <form class="edit-profile__contents" action="#" method="get">
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label for="pepName">Name</label>
+          </aside>
+          <div class="content__inputs"><input type="text" class="content__input"></div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label for="pepUsername">Username</label>
+          </aside>
+          <div class="content__inputs"><input type="text" class="content__input"></div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label for="pepWebsite">Website</label>
+          </aside>
+          <div class="content__inputs"><input type="text" class="content__input"></div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label for="pepBio">Bio</label>
+          </aside>
+          <div class="content__inputs"><textarea class="content__input"></textarea></div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label for=""></label>
+          </aside>
+          <div class="content__inputs content__inputs--private">
+            <h2 class="content__private">Private Information</h2>
+          </div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label for="pepEmail">Email</label>
+          </aside>
+          <div class="content__inputs"><input type="text" class="content__input"></div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label for="pepPhone Number">Phone Number</label>
+          </aside>
+          <div class="content__inputs"><input type="text" class="content__input"></div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label for="pepGender">Gender</label>
+          </aside>
+          <div class="content__inputs">
             <select class="choose__gender" name="gender">
               <option value="male" selected>Male</option>
               <option value="female">Female</option>
               <option value="none">Not Specified</option>
             </select>
-          </li>
-          <li class="edit-profile__list--item">
-            <span class="edit-profile__type">Similar Account Suggestion</span>
-            <input type="checkbox" id="similar" name="subscribe" value="similar_accounts" checked/>
-            <label for="similar">Include your account when recommending similar accounts people might want to follow.</label>
-            <a href="#">[<i class="fa fa-question" aria-hidden="true"></i>]</a>
-          </li>
-        </ul>
-        <input type="submit" class="submit " value="Submit" />
+          </div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+            <label>Similar Account Suggestion</label>
+          </aside>
+          <div class="content__inputs">
+            <div class="checkbox">
+              <input class="click" type="checkbox" id="similar" name="subscribe" value="similar_accounts" checked/>
+            </div>
+            <label class="content__suggestion" for="pepSuggestion">Include your account when recommending similar accounts people might want to follow.</label>
+          </div>
+        </div>
+        <div class="edit-profile__content">
+          <aside class="content__label">
+          </aside>
+          <div class="content__inputs">
+            <button class="submit ">Submit</button>
+            <label><a class="pause__account" href="#">Temporarily disable my account</a></label>
+          </div>
+        </div>
       </form>
-      <a class="pause__account" href="#">Temporarily disable my account</a>
-    </div>
   </main>
-  <footer>
+  <footer class="footer footer__edit">
     <nav class="footer__nav">
       <ul class="footer__list">
         <li class="footer__list--item"><a href="#" class="footer__link">ABOUT US</a></li>

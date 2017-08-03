@@ -23,6 +23,11 @@ input:focus {
   border: 1px solid #b2b2b2;
 }
 
+textarea:focus {
+  outline: none;
+  border: 1px solid #b2b2b2;
+}
+
 button:focus {
   outline: none;
 }
@@ -34,4 +39,17 @@ button:active {
 
 i {
   cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border: 1px solid #b2b2b2;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
 }
