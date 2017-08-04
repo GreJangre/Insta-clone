@@ -1,4 +1,4 @@
-@media screen and (min-width: 450px) and (max-width: 735px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
   .body__index {
     background-color: white;
   }
@@ -81,5 +81,28 @@
   }
   .footer__edit {
     margin-top: 10px;
+  }
+  .edit-profile__thumb {
+    margin-left: 20px;
+  }
+  .edit-profile__content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .content__label {
+    flex: 0 0 24px;
+    padding-left: 20px;
+  }
+  .content__inputs {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+  button.submit {
+    padding: 0 8px;
+  }
+  .pause__account {
+    margin: 0;
   }
 }
