@@ -6,21 +6,88 @@
   margin-top: 60px;
 }
 
-.profile .profile__header {
+.profile__header {
   display: flex;
+  margin-bottom: 44px;
 }
 
-.profile .profile__thumb {
-  width: 125px;
-  height: 125px;
+.profile__thumb {
+  flex: 1;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.profile__thumb img {
+  width: 152px;
+  height: 152px;
   border: 1px solid #e6e6e6;
   border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.profile .profile__name {
+.profile__info {
+  flex-basis: 30px;
+  flex: 2;
+  flex-grow: 2;
+}
+
+.profile__name {
   display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile__username {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 200;
+}
+
+.profile__edit {
+  display: block;
+  margin-left: 20px;
+  flex-shrink: 0;
+  padding: 0 23px;
+  border-width: 1px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.profile__edit a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.profile__name i {
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .profile .profile__stats {
   display: flex;
+  color: #003569;
+  margin-bottom: 20px;
+}
+
+.profile__stat {
+  font-size: 16px;
+  margin-right: 40px;
+}
+
+.profile__bio {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.profile__images img {
+  width: 293px;
+  height: 293px;
+}
+
+.profile__image--overlay {
+  position: absolute;
 }
